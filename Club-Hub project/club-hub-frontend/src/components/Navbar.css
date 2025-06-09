@@ -1,0 +1,63 @@
+.navbar {
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #001f3f;
+}
+
+.nav-button {
+  color: white !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-2px);
+}
+
+.nav-button.active {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.auth-button {
+  color: white !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  padding: 8px 20px !important;
+  border-radius: 24px !important;
+  transition: all 0.3s ease !important;
+}
+
+.auth-button:hover {
+  border-color: white !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-2px);
+}
+
+.register-button {
+  background-color: #52ab98 !important;
+  color: white !important;
+  padding: 8px 20px !important;
+  border-radius: 24px !important;
+  transition: all 0.3s ease !important;
+}
+
+.register-button:hover {
+  background-color: #45917f !important;
+  transform: translateY(-2px);
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #ffffff, #52ab98);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-accent {
+  color: #52ab98;
+}
+

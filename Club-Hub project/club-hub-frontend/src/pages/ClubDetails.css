@@ -1,0 +1,172 @@
+.club-details {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.club-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.join-btn {
+  padding: 0.8rem 2rem;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.join-btn:hover {
+  background-color: #283593;
+}
+
+.club-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.about-section,
+.announcements-section,
+.events-section,
+.leaders-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .club-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom styles for ClubDetails */
+.club-details-tab-content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Custom scrollbar for the content sections */
+.club-details-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.club-details-content::-webkit-scrollbar-track {
+  background: #205295;
+  border-radius: 4px;
+}
+
+.club-details-content::-webkit-scrollbar-thumb {
+  background: #2C74B3;
+  border-radius: 4px;
+}
+
+.club-details-content::-webkit-scrollbar-thumb:hover {
+  background: #205295;
+}
+
+/* Card hover effects */
+.event-card, .announcement-card, .leader-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover, 
+.announcement-card:hover, 
+.leader-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom styles for the join button */
+.join-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.join-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.join-button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Tab indicator animation */
+.tab-indicator {
+  transition: all 0.3s ease;
+}
+
+/* Leader image hover effect */
+.leader-image {
+  transition: transform 0.3s ease;
+}
+
+.leader-image:hover {
+  transform: scale(1.05);
+}
+
+/* Announcement card left border gradient */
+.announcement-card {
+  border-image: linear-gradient(to bottom, #2C74B3, #144272) 1;
+}
+
+/* Custom styles for mobile responsiveness */
+@media (max-width: 768px) {
+  .tab-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .tab-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .leader-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Loading state animations */
+@keyframes shimmer {
+  0% { background-position: -468px 0 }
+  100% { background-position: 468px 0 }
+}
+
+.loading-shimmer {
+  background: linear-gradient(to right, #205295 8%, #2C74B3 18%, #205295 33%);
+  background-size: 800px 104px;
+  animation: shimmer 1.5s linear infinite;
+}
+
+/* Hero section gradient animation */
+.hero-gradient {
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+} 

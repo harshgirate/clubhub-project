@@ -1,0 +1,129 @@
+/* Base styles */
+.auth-container {
+  min-height: 100vh;
+  background-color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.auth-card {
+  background-color: var(--primary-dark);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 2rem;
+  width: 100%;
+  max-width: 28rem;
+  border: 1px solid rgba(82, 171, 152, 0.1);
+}
+
+/* Form elements */
+.auth-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background-color: rgba(82, 171, 152, 0.1);
+  border: 1px solid rgba(82, 171, 152, 0.2);
+  color: var(--white);
+  transition: var(--transition-normal);
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 2px rgba(82, 171, 152, 0.2);
+}
+
+.auth-input::placeholder {
+  color: rgba(200, 216, 228, 0.6);
+}
+
+/* Select styles */
+.auth-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background-color: rgba(82, 171, 152, 0.1);
+  border: 1px solid rgba(82, 171, 152, 0.2);
+  color: var(--white);
+  transition: var(--transition-normal);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23c8d8e4'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.5em;
+}
+
+.auth-select:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 2px rgba(82, 171, 152, 0.2);
+}
+
+/* Button styles */
+.auth-button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  background-color: var(--primary-light);
+  color: var(--white);
+  font-weight: 500;
+  transition: var(--transition-normal);
+  border: none;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background-color: rgba(82, 171, 152, 0.9);
+  transform: translateY(-2px);
+}
+
+.auth-button:active {
+  transform: translateY(0);
+}
+
+/* Error message styles */
+.auth-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: rgb(239, 68, 68);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+}
+
+/* Link styles */
+.auth-link {
+  color: var(--primary-light);
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+.auth-link:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-card {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .auth-card {
+    padding: 1.5rem;
+  }
+} 

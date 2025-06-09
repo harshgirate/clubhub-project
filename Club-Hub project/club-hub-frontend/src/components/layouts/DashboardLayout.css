@@ -1,0 +1,51 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.dashboard-topbar {
+  background: linear-gradient(to right, #001f3f, #0056b3) !important;
+  color: white !important;
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.dashboard-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 31, 63, 0.1);
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #001f3f 0%, #0056b3 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.action-button {
+  background-color: #52ab98 !important;
+  color: white !important;
+  text-transform: none !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.action-button:hover {
+  background-color: #45917f !important;
+  transform: translateY(-2px);
+} 

@@ -1,0 +1,299 @@
+.clubs-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.clubs-hero {
+  background: linear-gradient(135deg, #001f3f 0%, #0056b3 100%);
+  padding: 100px 0;
+  color: white;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.clubs-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+  opacity: 0.1;
+}
+
+.hero-title {
+  font-weight: 700 !important;
+  margin-bottom: 16px !important;
+  font-family: 'Poppins', sans-serif !important;
+  position: relative;
+}
+
+.hero-subtitle {
+  opacity: 0.9;
+  font-weight: 400 !important;
+  font-family: 'Inter', sans-serif !important;
+  position: relative;
+}
+
+.club-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 16px !important;
+  border: 1px solid rgba(0, 31, 63, 0.1);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.club-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 31, 63, 0.15) !important;
+  border-color: rgba(82, 171, 152, 0.5);
+}
+
+.club-image {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.club-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.5));
+}
+
+.club-card:hover .club-image {
+  transform: scale(1.05);
+}
+
+.club-name {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+  color: #001f3f !important;
+}
+
+.club-category {
+  background-color: #e3f2fd !important;
+  color: #0056b3 !important;
+  font-weight: 500 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.club-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: currentColor;
+  opacity: 0.1;
+  border-radius: inherit;
+}
+
+.club-category[label="Technology"] {
+  color: #2196f3 !important;
+  background-color: #e3f2fd !important;
+}
+
+.club-category[label="Arts & Culture"] {
+  color: #e91e63 !important;
+  background-color: #fce4ec !important;
+}
+
+.club-category[label="Sports"] {
+  color: #4caf50 !important;
+  background-color: #e8f5e9 !important;
+}
+
+.club-description {
+  color: #666 !important;
+  margin-bottom: 16px !important;
+  line-height: 1.6 !important;
+}
+
+.category-chip {
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.category-chip:hover {
+  background-color: #e3f2fd !important;
+  transform: translateY(-2px);
+}
+
+.view-details-button {
+  background-color: #001f3f !important;
+  color: white !important;
+  text-transform: none !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  background: linear-gradient(45deg, #001f3f, #0056b3) !important;
+  box-shadow: 0 2px 10px rgba(0, 31, 63, 0.2) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  padding: 8px 20px !important;
+}
+
+.view-details-button:hover {
+  background-color: #002b57 !important;
+  transform: translateY(-2px);
+}
+
+.join-button {
+  border-color: #52ab98 !important;
+  color: #52ab98 !important;
+  text-transform: none !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid #52ab98 !important;
+}
+
+.join-button:hover {
+  background-color: #52ab98 !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+.join-button-large {
+  background-color: #52ab98 !important;
+  color: white !important;
+  text-transform: none !important;
+  padding: 12px !important;
+  font-size: 1.1rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.join-button-large:hover {
+  background-color: #45917f !important;
+  transform: translateY(-2px);
+}
+
+.club-dialog .MuiDialog-paper {
+  border-radius: 16px !important;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #fff, #f8f9fa);
+}
+
+.club-detail-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.club-detail-title {
+  font-family: 'Poppins', sans-serif !important;
+  color: #001f3f !important;
+}
+
+.club-detail-category {
+  background-color: #e3f2fd !important;
+  color: #0056b3 !important;
+}
+
+.club-detail-description {
+  color: #666 !important;
+  line-height: 1.8 !important;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  background-color: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  background-color: #e3f2fd;
+  transform: translateY(-2px);
+}
+
+.close-button {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.3s ease !important;
+}
+
+.close-button:hover {
+  background-color: white !important;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 600px) {
+  .clubs-hero {
+    padding: 60px 0;
+  }
+
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+
+  .club-card {
+    margin: 0 16px;
+  }
+  
+  .info-item {
+    padding: 8px;
+  }
+} 
+
+/* Update category chip styles */
+.category-chip[label="Photography"] {
+  color: #9c27b0 !important;
+  background-color: #f3e5f5 !important;
+}
+
+.category-chip[label="Dance"] {
+  color: #e91e63 !important;
+  background-color: #fce4ec !important;
+}
+
+.category-chip[label="Gaming"] {
+  color: #2196f3 !important;
+  background-color: #e3f2fd !important;
+}
+
+/* Add these styles for better category display in club details */
+.club-detail-category {
+  font-weight: 500 !important;
+}
+
+.club-detail-category[label="Photography"] {
+  color: #9c27b0 !important;
+  background-color: #f3e5f5 !important;
+}
+
+.club-detail-category[label="Dance"] {
+  color: #e91e63 !important;
+  background-color: #fce4ec !important;
+}
+
+.club-detail-category[label="Gaming"] {
+  color: #2196f3 !important;
+  background-color: #e3f2fd !important;
+} 
