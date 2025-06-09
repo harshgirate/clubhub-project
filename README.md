@@ -4,6 +4,7 @@ Django and React Js based web application with Postgresql used for DB
 # Install dependencies
 pip install -r requirements.txt
 *Add Database config*
+*Add port*
 
 # Run backend 
 1.python manage.py makemigrations
